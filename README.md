@@ -15,7 +15,7 @@ Support multi GPUs and single GPU training efficiently. First download DAVIS 201
 Launch multi GPU training by the statement below:
 
 ```
-CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch --nproc_per_node=4  --master_port=3278 tools/train.py configs/EfficientSCI_plus_plus/QuantSCI.py --distributed=True
+CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch --nproc_per_node=4  --master_port=3278 tools/train.py configs/QuantSCI/QuantSCI.py --distributed=True
 ```
 
 Launch single GPU training by the statement below.
