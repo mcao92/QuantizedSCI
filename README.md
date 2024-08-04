@@ -15,7 +15,7 @@ Support multi GPUs and single GPU training efficiently. First download DAVIS 201
 Launch multi GPU training by the statement below:
 
 ```
-CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch --nproc_per_node=4  --master_port=3278 tools/train.py configs/QuantSCI/QuantSCI.py --distributed=True
+CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch --nproc_per_node=4  --master_port=3278 tools/train.py configs/quantized_sci/quantized_sci.py --distributed=True
 ```
 
 Launch single GPU training by the statement below.
@@ -23,15 +23,19 @@ Launch single GPU training by the statement below.
 Default using GPU 0. One can also choosing GPUs by specify CUDA_VISIBLE_DEVICES
 
 ```
-python tools/train.py configs/QuantSCI/QuantSCI.py
+python tools/train.py configs/quantized_sci/quantized_sci.py 
 ```
 
 ## Testing Q-SCI on Grayscale Simulation Dataset 
 Specify the path of weight parameters, then launch 6 benchmark test in grayscale simulation dataset by executing the statement below.
 
 ```
-python tools/test.py configs/QuantSCI/QuantSCI.py --weights=checkpoints/QuantSCI.pth
+python tools/test.py configs/quantized_sci/quantized_sci.py --weights=checkpoints/8bit.pth
+python tools/test.py configs/quantized_sci/quantized_sci.py --weights=checkpoints/4bit.pth
+python tools/test.py configs/quantized_sci/quantized_sci.py --weights=checkpoints/3bit.pth
+python tools/test.py configs/quantized_sci/quantized_sci.py --weights=checkpoints/2bit.pth
 ```
+And, change the bit_depth in *configs/quantized_sci/quantized_sci.py*
 
 ## Citation
 
