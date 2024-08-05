@@ -40,7 +40,7 @@ And, change the bit_depth in *configs/quantized_sci/quantized_sci.py*
 ## Citation
 
 ```
-@inproceedings{cao2024a,
+@inproceedings{cao2024simple,
   title={A Simple Low-bit Quantization Framework for Video Snapshot Compressive Imaging},
   author={Cao, Miao and Wang, Lishun and Wang, Huan and Yuan, Xin},
   booktitle={European Conference on Computer Vision},
