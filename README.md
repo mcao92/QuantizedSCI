@@ -43,6 +43,12 @@ And, change the bit_depth in *configs/quantized_sci/quantized_sci.py*
 ## PSNR-Computational cost Comparison
 <img src="/figure/psnr.png" alt="PSNR-Params" width="450" height="322">
 
+# Reconstruction results of the real datasets
+<video width="640" height="480" controls>
+  <source src="/figure/real_results.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ## Citation
 
 ```
