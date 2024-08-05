@@ -41,7 +41,7 @@ python tools/test.py configs/quantized_sci/quantized_sci.py --weights=checkpoint
 And, change the bit_depth in *configs/quantized_sci/quantized_sci.py*
 
 ## PSNR-Computational cost Comparison
-<img src="/figure/psnr.png" alt="PSNR-Params" width="600" height="430">
+<img src="/figure/psnr.png" alt="PSNR-Params" width="450" height="322">
 
 ## Citation
 
