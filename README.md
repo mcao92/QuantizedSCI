@@ -47,7 +47,7 @@ And, change the bit_depth in *configs/quantized_sci/quantized_sci.py*
 ![Real data](/figure/real_results.gif)
 
 ## Citation
-
+If our code or models help your work, please cite our [paper](https://arxiv.org/pdf/2407.21517):
 ```
 @inproceedings{cao2024simple,
   title={A Simple Low-bit Quantization Framework for Video Snapshot Compressive Imaging},
